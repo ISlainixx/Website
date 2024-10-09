@@ -16,7 +16,6 @@ body, html {
 
 .container {
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
     padding: 30px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px); /* For Safari */
@@ -25,7 +24,7 @@ body, html {
     width: 90%;
     max-width: 400px;
     margin: 20px;
-    border-radius: 100%;
+    /* Removed border-radius to keep it not rounded */
 }
 
 .container h1 {
@@ -43,15 +42,14 @@ body, html {
 .logo {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 50%; /* This makes the logo circular */
     margin: 0 auto 20px;
     background: url('logo.png') no-repeat center/cover;
-    background-color: transparent; /* Enlève la couleur de fond */
+    background-color: transparent; /* Removes background color */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionnel, ajoute un léger contour */
-    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: adds a subtle outline */
 }
 
 .links {
